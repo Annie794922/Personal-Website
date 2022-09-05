@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living with Coding / Szu-Yu</title>
+    <title>Living with Coding｜Szu-Yu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -101,6 +101,7 @@
             .navbar-links a {
                 font-size: 15px;
                 line-height: 58px;
+                margin: 0 10px;
             }
         }
 
@@ -172,6 +173,20 @@
         .introduce-title {
             color: var(--main-color);
             margin: 15px 0;
+        }
+
+        @media screen and ( max-width: 576px ) {
+            .area-title {
+                font-size: 23px;
+            }
+
+            .personal-image {
+                width: 260px;
+            }
+
+            .introduce-title {
+                font-size: 21px;
+            }
         }
 
         .brief-introduce {
@@ -286,16 +301,23 @@
             object-fit: cover;
         }
 
+        @media screen and ( max-width: 768px ) {
+            .project-img {
+                width: 368px;
+                height: 264px;
+            }
+        }
+
         .project-title {
             color: var(--main-color);
             margin-right: 10px;
         }
 
-        .video-logo {
+        .demo-logo {
             color: var(--main-color);
         }
 
-        .video-logo:hover {
+        .demo-logo:hover {
             color: var(--second-color);
             transition: 0.8s;
         }
@@ -428,12 +450,30 @@
                 <h3 class="introduce-title">作品展示</h3>
                 <div class="introduce-details">
                     <span class="material-symbols-outlined">
+                        web
+                    </span>
+                    <ul class="projects-list">
+                        <li><a href="https://annie794922.github.io/SONGBUY-shopping-mall/" target="_blank">購物模擬網站（建置中）</a></li>
+                    </ul>
+                    <span class="material-symbols-outlined">
                         smart_display
                     </span>
                     <ul class="projects-list">
                         <li><a href="https://youtu.be/oS32BcBfEiQ" target="_blank">病蟲害辨識系統（網頁版）</a></li>
                         <li><a href="https://youtu.be/XTNPAid-6qc" target="_blank">病蟲害辨識系統（手機版）</a></li>
                         <li><a href="https://youtu.be/Ei5FmF-_q9w" target="_blank">企業選才平台</a></li>
+                    </ul>
+                    <span class="material-symbols-outlined">
+                        code_blocks
+                    </span>
+                    <ul class="projects-list">
+                        <li><a href="https://github.com/Annie794922/SONGBUY-shopping-mall" target="_blank">購物模擬網站（建置中）</a></li>
+                    </ul>
+                    <span class="material-symbols-outlined">
+                        grid_view
+                    </span>
+                    <ul class="projects-list">
+                        <li><a href="https://www.figma.com/file/nkgzDp6jnnJWdEWpttewHi/SONG-BUY---Shopping-Project-Wireframe" target="_blank">購物模擬網站</a></li>
                     </ul>
                 </div>
                 <h3 class="introduce-title">技能明細</h3>
@@ -505,7 +545,7 @@
                 <h5 class="experience-matter">完成大學學業</h5>
                 <small class="experience-date">2011/09-2016/06</small>
                 <ul class="experience-description">
-                    <li>畢業於淡江大學日本語文學系，JLPT N2檢定合格。</li>
+                    <li>畢業於淡江大學日本語文學系，日本語能力測驗（JLPT）N2合格。</li>
                     <li>畢業專題選擇創作主題製作日文兒童繪本，從題材構思至插畫繪製皆為獨立作業。</li>
                 </ul>
             </div>
@@ -514,6 +554,51 @@
     <div id="collection" class="collection-area container-fluid">
         <div class="row">
             <h2 class="area-title">作品說明｜COLLECTION</h2>
+            <div class="collection-block">
+                <div class="project-img-group col-12">
+                    <div class="project-img">
+                        <img src="image/collection/shopping-project-01.png" alt="first shopping-project picture">
+                    </div>
+                    <div class="project-img d-none d-lg-block">
+                        <img src="image/collection/shopping-project-02.png" alt="second shopping-project picture">
+                    </div>
+                </div>
+                <div class="project-description col-8">
+                    <div class="project-title-group d-flex align-items-center">
+                        <h5 class="project-title d-inline-block">購物模擬網站</h5>
+                        <a class="demo-logo" href="https://annie794922.github.io/SONGBUY-shopping-mall/" target="_blank" title="Web">
+                            <span class="material-symbols-outlined">
+                                web
+                            </span>
+                        </a>
+                        <a class="demo-logo" href="https://github.com/Annie794922/SONGBUY-shopping-mall" target="_blank" title="Code">
+                            <span class="material-symbols-outlined">
+                                code_blocks
+                            </span>
+                        </a>
+                        <a class="demo-logo" href="https://www.figma.com/file/nkgzDp6jnnJWdEWpttewHi/SONG-BUY---Shopping-Project-Wireframe" target="_blank" title="Figma">
+                            <span class="material-symbols-outlined">
+                                grid_view
+                            </span>
+                        </a>
+                    </div>
+                    <h6 class="project-date">2022/09-建置中</h6>
+                    <p>運用基礎課程中所習得的前端技術，結合課程專題及實習階段培養起來的程式邏輯，重新編寫一個功能及邏輯較為完善的購物網站，目前除了首頁以外的頁面仍在建置中。</p>
+                    <h5 class="project-info-title">專案類型</h5>
+                    <p class="project-info-details">前端（Vue CLI）</p>
+                    <h5 class="project-info-title">負責範圍</h5>
+                    <ul class="project-info-details">
+                        <li>利用Figma進行切版前置作業（UI/UX）。</li>
+                        <li>首頁之頁面切版及JS編寫。</li>
+                        <li>（未完待續）</li>
+                    </ul>
+                    <h5 class="project-info-title">專案內容及使用技術</h5>
+                    <ul class="project-info-details">
+                        <li>首頁：介紹本網頁的成立目的以及四大特點。<p>［Bootstrap5、JS查看特點的詳細說明］</p></li>
+                        <li>（未完待續）</p></li>
+                    </ul>
+                </div>
+            </div>
             <div class="collection-block">
                 <div class="project-img-group col-12">
                     <div class="project-img">
@@ -526,7 +611,7 @@
                 <div class="project-description col-8">
                     <div class="project-title-group d-flex align-items-center">
                         <h5 class="project-title d-inline-block">病蟲害辨識系統</h5>
-                        <a class="video-logo" href="https://youtu.be/oS32BcBfEiQ" target="_blank" title="影片展示">
+                        <a class="demo-logo" href="https://youtu.be/oS32BcBfEiQ" target="_blank" title="Video">
                             <span class="material-symbols-outlined">
                                 smart_display
                             </span>
@@ -566,7 +651,7 @@
                 <div class="project-description col-8">
                     <div class="project-title-group d-flex align-items-center">
                         <h5 class="project-title d-inline-block">企業選才平台</h5>
-                        <a class="video-logo" href="https://youtu.be/Ei5FmF-_q9w" target="_blank" title="影片展示">
+                        <a class="demo-logo" href="https://youtu.be/Ei5FmF-_q9w" target="_blank" title="Video">
                             <span class="material-symbols-outlined">
                                 smart_display
                             </span>
